@@ -2,7 +2,7 @@
   "name": "this-is-painful",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://stephen1z2.github.io/This_Is_Painful/",
+  "homepage": "https://stephen1z2.github.io/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
