@@ -18,4 +18,5 @@ Backlog
     3. Add Timer function to quiz (Start at 60 seconds) [Done]
     4. Add time to correct answers (10 secs add??) [Done]
     5. Show results to questions at the end of tests for review
+    6. refactor quiz.jsx file. Make a json file for quiz questions.
     
