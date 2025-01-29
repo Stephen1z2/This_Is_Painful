@@ -6,3 +6,16 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
+Backlog
+
+    1. Add categories (topics) [Done]
+    2. Add Test questions (Mostly for testing) [Done]
+    3. Add Timer function to quiz (Start at 60 seconds) [Done]
+    4. Add time to correct answers (10 secs add??) [Done]
+    5. Show results to questions at the end of tests for review
+    
