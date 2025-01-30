@@ -2,136 +2,322 @@
   "projectManagement": [
     {
       "question": "What is the first process in project management?",
-      "options": ["Initiating", "Planning", "Executing", "Closing"],
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
       "answer": "Initiating"
     },
     {
       "question": "What is the second process in project management?",
-      "options": ["Initiating", "Planning", "Executing", "Closing"],
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
       "answer": "Planning"
     },
     {
       "question": "What is the third process in project management?",
-      "options": ["Initiating", "Planning", "Executing", "Closing"],
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
       "answer": "Executing"
     },
     {
       "question": "What is the fourth process in project management?",
-      "options": ["Initiating", "Planning", "Executing", "Closing"],
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
       "answer": "Closing"
     },
     {
       "question": "What is the final process in project management?",
-      "options": ["Initiating", "Planning", "Executing", "Closing"],
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
       "answer": "Closing"
     }
   ],
   "integrationManagement": [
     {
       "question": "What is the main purpose of integration management?",
-      "options": ["Coordinate all project elements", "Manage project costs", "Ensure timely completion", "Manage human resources"],
+      "options": [
+        "Coordinate all project elements",
+        "Manage project costs",
+        "Ensure timely completion",
+        "Manage human resources"
+      ],
       "answer": "Coordinate all project elements"
     },
     {
       "question": "What is the second purpose of integration management?",
-      "options": ["Coordinate all project elements", "Manage project costs", "Ensure timely completion", "Manage human resources"],
+      "options": [
+        "Coordinate all project elements",
+        "Manage project costs",
+        "Ensure timely completion",
+        "Manage human resources"
+      ],
       "answer": "Manage project costs"
     },
     {
       "question": "What is the third purpose of integration management?",
-      "options": ["Coordinate all project elements", "Manage project costs", "Ensure timely completion", "Manage human resources"],
+      "options": [
+        "Coordinate all project elements",
+        "Manage project costs",
+        "Ensure timely completion",
+        "Manage human resources"
+      ],
       "answer": "Ensure timely completion"
     },
     {
       "question": "What is the fourth purpose of integration management?",
-      "options": ["Coordinate all project elements", "Manage project costs", "Ensure timely completion", "Manage human resources"],
+      "options": [
+        "Coordinate all project elements",
+        "Manage project costs",
+        "Ensure timely completion",
+        "Manage human resources"
+      ],
       "answer": "Manage human resources"
     },
     {
       "question": "What is the final purpose of integration management?",
-      "options": ["Coordinate all project elements", "Manage project costs", "Ensure timely completion", "Manage human resources"],
+      "options": [
+        "Coordinate all project elements",
+        "Manage project costs",
+        "Ensure timely completion",
+        "Manage human resources"
+      ],
       "answer": "Coordinate all project elements"
+    },
+    {
+      "question": "What is the primary purpose of the Project Charter?",
+      "options": [
+        "Authorize the project",
+        "Establish the project schedule",
+        "Define project scope",
+        "Assign resources"
+      ],
+      "answer": "Authorize the project"
+    },
+    {
+      "question": "Which document is used to control project changes?",
+      "options": [
+        "Project Charter",
+        "Change Control System",
+        "Work Breakdown Structure",
+        "Risk Register"
+      ],
+      "answer": "Change Control System"
     }
   ],
   "costManagement": [
     {
       "question": "What is the primary goal of cost management?",
-      "options": ["Estimate costs", "Control costs", "Plan budget", "All of the above"],
+      "options": [
+        "Estimate costs",
+        "Control costs",
+        "Plan budget",
+        "All of the above"
+      ],
       "answer": "All of the above"
     },
     {
       "question": "What is the second goal of cost management?",
-      "options": ["Estimate costs", "Control costs", "Plan budget", "All of the above"],
+      "options": [
+        "Estimate costs",
+        "Control costs",
+        "Plan budget",
+        "All of the above"
+      ],
       "answer": "Estimate costs"
     },
     {
       "question": "What is the third goal of cost management?",
-      "options": ["Estimate costs", "Control costs", "Plan budget", "All of the above"],
+      "options": [
+        "Estimate costs",
+        "Control costs",
+        "Plan budget",
+        "All of the above"
+      ],
       "answer": "Control costs"
     },
     {
       "question": "What is the fourth goal of cost management?",
-      "options": ["Estimate costs", "Control costs", "Plan budget", "All of the above"],
+      "options": [
+        "Estimate costs",
+        "Control costs",
+        "Plan budget",
+        "All of the above"
+      ],
       "answer": "Plan budget"
     },
     {
       "question": "What is the final goal of cost management?",
-      "options": ["Estimate costs", "Control costs", "Plan budget", "All of the above"],
+      "options": [
+        "Estimate costs",
+        "Control costs",
+        "Plan budget",
+        "All of the above"
+      ],
       "answer": "All of the above"
+    },
+    {
+      "question": "What is the purpose of Earned Value Management (EVM)?",
+      "options": [
+        "Measure project performance",
+        "Develop cost estimates",
+        "Control project changes",
+        "Manage project resources"
+      ],
+      "answer": "Measure project performance"
+    },
+    {
+      "question": "Which of the following is used to monitor and control project costs?",
+      "options": [
+        "Cost Performance Index",
+        "Risk Register",
+        "Project Charter",
+        "Resource Breakdown Structure"
+      ],
+      "answer": "Cost Performance Index"
     }
   ],
   "timeManagement": [
     {
       "question": "What is the main objective of time management?",
-      "options": ["Ensure timely completion of project", "Manage project costs", "Coordinate all project elements", "Manage human resources"],
+      "options": [
+        "Ensure timely completion of project",
+        "Manage project costs",
+        "Coordinate all project elements",
+        "Manage human resources"
+      ],
       "answer": "Ensure timely completion of project"
     },
     {
       "question": "What is the second objective of time management?",
-      "options": ["Ensure timely completion of project", "Manage project costs", "Coordinate all project elements", "Manage human resources"],
+      "options": [
+        "Ensure timely completion of project",
+        "Manage project costs",
+        "Coordinate all project elements",
+        "Manage human resources"
+      ],
       "answer": "Manage project costs"
     },
     {
       "question": "What is the third objective of time management?",
-      "options": ["Ensure timely completion of project", "Manage project costs", "Coordinate all project elements", "Manage human resources"],
+      "options": [
+        "Ensure timely completion of project",
+        "Manage project costs",
+        "Coordinate all project elements",
+        "Manage human resources"
+      ],
       "answer": "Coordinate all project elements"
     },
     {
       "question": "What is the fourth objective of time management?",
-      "options": ["Ensure timely completion of project", "Manage project costs", "Coordinate all project elements", "Manage human resources"],
+      "options": [
+        "Ensure timely completion of project",
+        "Manage project costs",
+        "Coordinate all project elements",
+        "Manage human resources"
+      ],
       "answer": "Manage human resources"
     },
     {
       "question": "What is the final objective of time management?",
-      "options": ["Ensure timely completion of project", "Manage project costs", "Coordinate all project elements", "Manage human resources"],
+      "options": [
+        "Ensure timely completion of project",
+        "Manage project costs",
+        "Coordinate all project elements",
+        "Manage human resources"
+      ],
       "answer": "Ensure timely completion of project"
+    },
+    {
+      "question": "Which tool helps identify the critical path of a project?",
+      "options": [
+        "Critical Path Method",
+        "Monte Carlo Simulation",
+        "Gantt Chart",
+        "PERT Chart"
+      ],
+      "answer": "Critical Path Method"
+    },
+    {
+      "question": "Which of the following is an input to the 'Develop Schedule' process?",
+      "options": [
+        "Project Charter",
+        "Resource Calendars",
+        "Work Breakdown Structure",
+        "Risk Register"
+      ],
+      "answer": "Resource Calendars"
     }
   ],
   "humanResourceManagement": [
     {
       "question": "What is the focus of human resource management?",
-      "options": ["Manage project team", "Plan budget", "Control costs", "Ensure timely completion"],
+      "options": [
+        "Manage project team",
+        "Plan budget",
+        "Control costs",
+        "Ensure timely completion"
+      ],
       "answer": "Manage project team"
     },
     {
       "question": "What is the second focus of human resource management?",
-      "options": ["Manage project team", "Plan budget", "Control costs", "Ensure timely completion"],
+      "options": [
+        "Manage project team",
+        "Plan budget",
+        "Control costs",
+        "Ensure timely completion"
+      ],
       "answer": "Plan budget"
     },
     {
       "question": "What is the third focus of human resource management?",
-      "options": ["Manage project team", "Plan budget", "Control costs", "Ensure timely completion"],
+      "options": [
+        "Manage project team",
+        "Plan budget",
+        "Control costs",
+        "Ensure timely completion"
+      ],
       "answer": "Control costs"
     },
     {
       "question": "What is the fourth focus of human resource management?",
-      "options": ["Manage project team", "Plan budget", "Control costs", "Ensure timely completion"],
+      "options": [
+        "Manage project team",
+        "Plan budget",
+        "Control costs",
+        "Ensure timely completion"
+      ],
       "answer": "Ensure timely completion"
     },
     {
       "question": "What is the final focus of human resource management?",
-      "options": ["Manage project team", "Plan budget", "Control costs", "Ensure timely completion"],
+      "options": [
+        "Manage project team",
+        "Plan budget",
+        "Control costs",
+        "Ensure timely completion"
+      ],
       "answer": "Manage project team"
     }
   ]
+
 }
