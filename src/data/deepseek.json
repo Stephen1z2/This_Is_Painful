@@ -1,0 +1,112 @@
+{
+    "humanResourceManagement": [
+      {
+        "question": "Which of the following is a key input to the Develop Team process in Human Resource Management?",
+        "options": [
+          "Project Staff Assignments",
+          "Resource Calendars",
+          "Team Performance Assessments",
+          "Training Records"
+        ],
+        "answer": "Project Staff Assignments"
+      },
+      {
+        "question": "Which of the following is a tool used in the Manage Team process?",
+        "options": [
+          "Conflict Management",
+          "Resource Leveling",
+          "Variance Analysis",
+          "Risk Audits"
+        ],
+        "answer": "Conflict Management"
+      }
+    ],
+    "costManagement": [
+      {
+        "question": "What is the primary purpose of the Control Costs process?",
+        "options": [
+          "To establish the project budget",
+          "To monitor the status of the project and manage changes to the cost baseline",
+          "To estimate the total cost of the project",
+          "To allocate costs to individual project activities"
+        ],
+        "answer": "To monitor the status of the project and manage changes to the cost baseline"
+      },
+      {
+        "question": "What is the primary purpose of the Cost Baseline in project management?",
+        "options": [
+          "To track actual project costs",
+          "To measure and monitor project performance",
+          "To estimate future project costs",
+          "To allocate resources efficiently"
+        ],
+        "answer": "To measure and monitor project performance"
+      }
+    ],
+    "integrationManagement": [
+      {
+        "question": "Which process involves coordinating all project plans and activities to ensure proper execution and control?",
+        "options": [
+          "Monitor and Control Project Work",
+          "Direct and Manage Project Work",
+          "Perform Integrated Change Control",
+          "Develop Project Management Plan"
+        ],
+        "answer": "Direct and Manage Project Work"
+      },
+      {
+        "question": "What is the primary purpose of the Perform Integrated Change Control process?",
+        "options": [
+          "To ensure that changes are properly reviewed, approved, and managed",
+          "To identify potential changes to the project scope",
+          "To update the project management plan",
+          "To communicate changes to stakeholders"
+        ],
+        "answer": "To ensure that changes are properly reviewed, approved, and managed"
+      }
+    ],
+    "timeManagement": [
+      {
+        "question": "What is the critical path in a project schedule?",
+        "options": [
+          "The shortest path through the project network diagram",
+          "The sequence of activities with the most dependencies",
+          "The longest path through the project network diagram with zero float",
+          "The path with the highest resource allocation"
+        ],
+        "answer": "The longest path through the project network diagram with zero float"
+      },
+      {
+        "question": "What is the primary purpose of the Develop Schedule process?",
+        "options": [
+          "To identify project activities",
+          "To estimate the duration of project activities",
+          "To create a project schedule model",
+          "To allocate resources to project activities"
+        ],
+        "answer": "To create a project schedule model"
+      }
+    ],
+    "projectManagement": [
+      {
+        "question": "Which of the following is a key output of the Develop Project Charter process?",
+        "options": [
+          "Project Management Plan",
+          "Project Charter",
+          "Stakeholder Register",
+          "Risk Management Plan"
+        ],
+        "answer": "Project Charter"
+      },
+      {
+        "question": "Which document is used to formally authorize the start of a project?",
+        "options": [
+          "Project Management Plan",
+          "Project Charter",
+          "Business Case",
+          "Stakeholder Register"
+        ],
+        "answer": "Project Charter"
+      }
+    ]
+  }

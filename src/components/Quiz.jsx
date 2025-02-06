@@ -4,18 +4,23 @@ import Timer from './Timer';
 import Question from './Question';
 import AnswerSection from './AnswerSection';
 import quizzes from '../data/quizzes.json';
+import deepseek from '../data/deepseek.json';
 
 function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(
+    selectedQuiz.difficulty === 'easy' ? 90 :
+    selectedQuiz.difficulty === 'medium' ? 60 :
+    selectedQuiz.difficulty === 'hard' ? 30 : 15
+  );
   const [nanoSeconds, setNanoSeconds] = useState(0);
   const [showBonus, setShowBonus] = useState(false);
   const [pulse, setPulse] = useState(false);
   const [results, setResults] = useState([]);
 
-  const questions = quizzes[selectedQuiz];
+  const questions = [...(quizzes[selectedQuiz.category] || []), ...(deepseek[selectedQuiz.category] || [])];
 
   useEffect(() => {
     if (timeLeft > 0 && !showScore) {
