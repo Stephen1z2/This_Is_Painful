@@ -13,12 +13,13 @@ Currently, two official plugins are available:
 
 Backlog
 
-    1. Add more legit questions. Mine are very low.
+    1. Add more legit questions. My questions are awful.
     2. Move JSON to the backend.
     3. Add page that does over how the time attack quiz works. Scoring, diffculty levels, etc..
     4. Refactor. Need it bad.
     5. Fix the drop down menus. Can barely see them.
     6. Improve difficulty levels.
+    7. Shuffle the questions in a quiz and the answers so they are not in the same order.
 
 
 
