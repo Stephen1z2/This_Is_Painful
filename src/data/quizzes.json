@@ -49,6 +49,26 @@
         "Closing"
       ],
       "answer": "Closing"
+    },
+    {
+      "question": "Which document formally authorizes a project?",
+      "options": [
+        "Project Statement of Work (SOW)",
+        "Project Charter",
+        "Business Case",
+        "Project Contract"
+      ],
+      "answer": "Project Charter"
+    },
+    {
+      "question": "Which document evolves throughout the risk management processes?",
+      "options": [
+        "Risk Mitigation Plan",
+        "Contingency Plan",
+        "Risk Profile",
+        "Risk Register"
+      ],
+      "answer": "Risk Register"
     }
   ],
   "integrationManagement": [
@@ -111,6 +131,16 @@
         "Assign resources"
       ],
       "answer": "Authorize the project"
+    },
+    {
+      "question": "Which document is used to control project changes?",
+      "options": [
+        "Project Charter",
+        "Change Control System",
+        "Work Breakdown Structure",
+        "Risk Register"
+      ],
+      "answer": "Change Control System"
     },
     {
       "question": "Which document is used to control project changes?",
@@ -193,6 +223,16 @@
         "Resource Breakdown Structure"
       ],
       "answer": "Cost Performance Index"
+    },
+    {
+      "question": "Your software development project is contractually set for 18 months, but the client now requests completion 2 months earlier due to regulatory changes. What is the best approach?",
+      "options": [
+        "Inform the customer about the impact on project constraints and, after approval, crash the project.",
+        "Accept the customer\u2019s request and cut parts of the project scope.",
+        "Stick to your original schedule and refuse any change.",
+        "Cut the duration of all project activities to meet the new deadline."
+      ],
+      "answer": "Inform the customer about the impact on project constraints and, after approval, crash the project."
     }
   ],
   "timeManagement": [
@@ -265,6 +305,26 @@
         "Risk Register"
       ],
       "answer": "Resource Calendars"
+    },
+    {
+      "question": "Which method is commonly used in project management software to build the project schedule network diagram?",
+      "options": [
+        "Leads and Lags",
+        "Critical Diagramming",
+        "Precedence Diagramming",
+        "Activity-On-Arrows Diagramming"
+      ],
+      "answer": "Precedence Diagramming"
+    },
+    {
+      "question": "Given a project where the customer is unavailable and prone to frequent changes, which methodology is most appropriate?",
+      "options": [
+        "Scrum",
+        "Predictive",
+        "Hybrid",
+        "Waterfall"
+      ],
+      "answer": "Hybrid"
     }
   ],
   "humanResourceManagement": [
@@ -317,7 +377,26 @@
         "Ensure timely completion"
       ],
       "answer": "Manage project team"
+    },
+    {
+      "question": "A customer-assigned team member is confrontational and intimidates project members. How should you handle this situation?",
+      "options": [
+        "Ask the customer to replace the person.",
+        "Unilaterally isolate the person from project meetings.",
+        "Do nothing since they were assigned by the client.",
+        "Confront the person about their behavior and inform the customer."
+      ],
+      "answer": "Confront the person about their behavior and inform the customer."
+    },
+    {
+      "question": "Your sponsor is leaving the project and will be replaced by two people. She claims that adding one more member won\u2019t significantly affect communication complexity. Is she correct?",
+      "options": [
+        "Yes, because the sponsor is always right.",
+        "Yes, adding one additional person adds only one more communication channel.",
+        "No, Agile teams should be as small as possible.",
+        "No, adding one more person adds more than one communication channel."
+      ],
+      "answer": "No, adding one more person adds more than one communication channel."
     }
   ]
-
 }

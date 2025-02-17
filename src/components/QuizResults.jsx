@@ -14,8 +14,8 @@ function QuizResults({ results, setSelectedQuiz }) {
   return (
     <div className='results-section'>
       <Typography variant="h4">Quiz Results</Typography>
-      <FormControl fullWidth margin="normal">
-        <InputLabel id="filter-label">Show</InputLabel>
+      <FormControl fullWidth margin="normal" sx={{backgroundColor: 'white'}}>
+        <InputLabel id="filter-label" sx={{color: 'black'}}>Show</InputLabel>
         <Select
           labelId="filter-label"
           id="filter"
