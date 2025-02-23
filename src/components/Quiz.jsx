@@ -17,6 +17,7 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
   const [pulse, setPulse] = useState(false);
   const [results, setResults] = useState([]);
   const [questions, setQuestions] = useState([]);
+  const [bonusIndicator, setBonusIndicator] = useState('');
 
   useEffect(() => {
     setQuestions(shuffleArray(getQuestions(selectedQuiz.category)));
@@ -54,9 +55,16 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
     if (isCorrect) {
       setScore(score + 1);
       setTimeLeft(timeLeft + 10);
-      setShowBonus(true);
-      setTimeout(() => setShowBonus(false), 1000);
+      setBonusIndicator('+10');
+    } else if (selectedQuiz.difficulty === 'hard' || selectedQuiz.difficulty === 'expert') {
+      setTimeLeft(timeLeft - 5); // Decrease time on incorrect answers for hard and expert levels
+      setBonusIndicator('-5');
+    } else {
+      setBonusIndicator('');
     }
+
+    setShowBonus(true);
+    setTimeout(() => setShowBonus(false), 1000);
 
     const updatedResults = [...results, {
       question: question.question,
@@ -65,7 +73,12 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
     }];
 
     setResults(updatedResults);
-    goToNextQuestion();
+
+    if (currentQuestionIndex === questions.length - 1) {
+      handleQuizCompletion(updatedResults); // Pass updated results to handleQuizCompletion
+    } else {
+      goToNextQuestion();
+    }
   };
 
   const goToNextQuestion = () => {
@@ -78,8 +91,9 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
     }
   };
 
-  const handleQuizCompletion = () => {
-    setQuizResults(results);
+  const handleQuizCompletion = (finalResults) => {
+    setQuizResults(finalResults || results); // Use finalResults if provided
+    setShowScore(true); // Ensure the score is shown when the quiz is completed
   };
 
   if (questions.length === 0) {
@@ -94,7 +108,7 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
         </div>
       ) : (
         <>
-          <Timer timeLeft={timeLeft} nanoSeconds={nanoSeconds} showBonus={showBonus} pulse={pulse} />
+          <Timer timeLeft={timeLeft} nanoSeconds={nanoSeconds} showBonus={showBonus} pulse={pulse} bonusIndicator={bonusIndicator} />
           <Question currentQuestionIndex={currentQuestionIndex} questions={questions} />
           <AnswerSection questions={questions} currentQuestionIndex={currentQuestionIndex} handleAnswerOptionClick={handleAnswerOptionClick} />
         </>

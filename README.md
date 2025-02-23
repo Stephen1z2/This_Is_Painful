@@ -14,10 +14,11 @@ Currently, two official plugins are available:
 Backlog
 
     1. Move JSON to the backend.
-    2 Improve difficulty levels.
-    3. Add explaination for why the question was that particular answer.
-    4. Still need to add more questions.
-    5. [Bug] The last question of each quiz is not being scored and does not show up in results.
+    2. Still need to add more questions.
+    3. [Bug] When finishing a quiz early it shows a blank results page
+    4. Add explaination for why the question was that particular answer.
+
+
     
 
     
@@ -47,8 +48,18 @@ Completed log
     16. Added about 10 questions from PMIQuestions.org free exams site.
     17. I added a stepper component to the quizzes. Shows how many questions you have and completed question will show as green and check marked. [Done]
     18. Fix styling of stepper has it was hard to see and formating would go off screen for questions with a lot of question. [Done]
-     19. Shuffle the questions in a quiz and the answers so they are not in the same order. [Done]
-     20. [Bug] Resolve issue with questions being rapid fired cycling none stop after putting in randomized question order. [Resolved]
+    19. Shuffle the questions in a quiz and the answers so they are not in the same order. [Done]
+    20. [Bug] Resolve issue with questions being rapid fired cycling none stop after putting in randomized question order. [Resolved]
+
+    Week 7
+    21. Improve difficulty levels. For Hard and above when getting an incorrect answer you get -5 seconds.
+    22. [Bug] when selecting a hard diff quiz you dont see the quiz. [resolved]
+    23. Add -5 animation or indicator when selecting a wrong answer
+    24. [Bug] Every question was showing a +10 even when selecting the wrong answer. Five seconds was being taken off but showing wrong indicator. [resolved].
+    25. [Bug] when starting quiz you would get the first question but when selecting the answer the quiz would disappear. [resolved]
+    26. [Bug] The last question of each quiz is not being scored and does not show up in results. [resolved].
+    27. Added 8 more questions to my quiz app.
+
 
 
 

@@ -1,6 +1,7 @@
 {
   "projectManagement": [
     {
+      
       "question": "What is the first process in project management?",
       "options": [
         "Initiating",
@@ -9,6 +10,97 @@
         "Closing"
       ],
       "answer": "Initiating"
+    },
+    {
+      "question": "You have just been hired as the project manager in a large company and given the approved project charter. You know that your company always undertakes very challenging projects and your project is not an exception. What should be your first course of action?",
+      "options": [
+          "Plan risk management",
+          "Confirm that all of the stakeholders have contributed to the scope",
+          "Identify project risks",
+          "Start developing project management plan"
+      ],
+      "answer": "Start developing project management plan"
+    },
+    {
+      "question": "You are several weeks into a new project, which is one of the most visible ones in the company. You are still getting the lay of the land and meeting with various stakeholders that include suppliers, customers, functional managers, and individual contributors. At some of these meetings, you are beginning to hear talk that not everyone is pleased that this project is taking place and is being given such high priority. You realize you have some tools that might assist you in fleshing out this problem. Which one would be most appropriate for you to use?",
+      "options": [
+        "The use of surveys to get feedback.",
+        "The stakeholder engagement assessment matrix.",
+        "The use of ground rules.",
+        "Preparing and delivering a PowerPoint presentation to all the stakeholders on the benefits of the project."
+      ],
+      "answer": "The stakeholder engagement assessment matrix."
+    },
+    {
+        "question": "Conflicts are common and unavoidable in projects. Which of following are the three most common sources of conflicts in projects?",
+         "options": [
+          "Schedules, Cost, Resources",
+          "Schedules, Project priorities, Resources",
+          "Cost, Resources, Personalities",
+          "Project priorities, Resources, Cost"
+         ],
+          "answer": "Schedules, Project priorities, Resources"
+    },
+    {
+      "question": "What is the second process in project management?",
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
+      "answer": "Planning"
+    },
+    {
+      "question": "What is the third process in project management?",
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
+      "answer": "Executing"
+    },
+    {
+      "question": "What is the fourth process in project management?",
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
+      "answer": "Closing"
+    },
+    {
+      "question": "What is the final process in project management?",
+      "options": [
+        "Initiating",
+        "Planning",
+        "Executing",
+        "Closing"
+      ],
+      "answer": "Closing"
+    },
+    {
+      "question": "Which document formally authorizes a project?",
+      "options": [
+        "Project Statement of Work (SOW)",
+        "Project Charter",
+        "Business Case",
+        "Project Contract"
+      ],
+      "answer": "Project Charter"
+    },
+    {
+      "question": "Which document evolves throughout the risk management processes?",
+      "options": [
+        "Risk Mitigation Plan",
+        "Contingency Plan",
+        "Risk Profile",
+        "Risk Register"
+      ],
+      "answer": "Risk Register"
+
     },
     {
       "question": "What is the second process in project management?",
@@ -165,6 +257,16 @@
       "answer": "All of the above"
     },
     {
+      "question": "You are a construction project manager. In a formal project management training you are told that you need to collect information on contract schedule, scope, quality, and cost performance along with all contract change documentation, payment records, and inspection results. This information can be used for lessons learned and as a basis for evaluating contractors for future contracts. Which document is your instructor talking about?",
+      "options": [
+        "Claims Administration",
+        "Close Project or Phase",
+        "Inspections and Audits updates",
+        "Procurement Documentation"
+      ],
+      "answer": "Procurement Documentation"
+    },
+    {
       "question": "What is the second goal of cost management?",
       "options": [
         "Estimate costs",
@@ -245,6 +347,26 @@
         "Manage human resources"
       ],
       "answer": "Ensure timely completion of project"
+    },
+    {
+      "question": "You have recently been assigned as the manager of a highly critical national project which should be finished in a very short period of time compared to similar projects. After developing the first draft of the project network diagram, you see that the project cannot be finished on time. If the network diagram cannot be changed anymore and you have extra human resources, what would be the best approach?",
+      "options": [
+          "Fast tracking",
+          "Crashing",
+          "Risk analysis",
+          "Leveling the resource"
+      ],
+      "answer": "Crashing"
+    },
+    {
+      "question": "According to the latest update of the project schedule, you realize that the project will be completed one month after the desired completion date. You have extra resources on hand and the activity dependencies are preferential. The project is not of high risk and the SPI up to now is 0.89. As a project manager, what would be your best course of action under these circumstances?",
+      "options": [
+        "Make more activities concurrent",
+        "Leveling the resources",
+        "Shift some of the resources from the preferential dependencies on the external ones",
+        "Eliminate some of the activities which are of lower Importance"
+      ],
+      "answer": "Make more activities concurrent"
     },
     {
       "question": "What is the second objective of time management?",
@@ -337,6 +459,26 @@
         "Ensure timely completion"
       ],
       "answer": "Manage project team"
+    },
+    {
+      "question": "As the manager of a highly critical project, you walk into your office and receive a phone call from your client notifying you that they need an urgent review meeting about the delay that occurred in the delivery of one of the major pieces of equipment for the project. You open your e-mail and you get bombarded with the emails coming from two of your team about a conflict that started between them this morning. After a few minutes, you get a phone call from one of them while the other one shows up at your office. Which conflict resolution technique would you use immediately?",
+      "options": [
+          "Collaborating",
+          "Forcing",
+          "Compromising",
+          "Smoothing"
+      ],
+      "answer": "Smoothing"
+    },
+    {
+      "question": "You have just been assigned to the photo transfer project. You are beginning to meet with the stakeholders and have made some observations. You notice that the team of seven software developers has been given quite a bit of autonomy in how they conduct their work. The sponsor is pleased with the work so far, as is the business representative, who has been giving the team regular feedback on their deliverables. What methodology is the team most likely following?",
+      "options": [
+          "Adaptive",
+          "Predictive",
+          "Hybrid",
+          "Waterfall"
+      ],
+      "answer": "Adaptive"
     },
     {
       "question": "What is the second focus of human resource management?",

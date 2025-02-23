@@ -180,7 +180,6 @@ body {
 
 .bonus-time {
   font-size: 24px;
-  color: #00ff00;
   position: absolute;
   top: -30px;
   right: 0;
@@ -191,6 +190,14 @@ body {
   0% { opacity: 0; transform: translateY(-10px); }
   50% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.negative-bonus {
+  color: #ff0000; /* Red color for negative bonus */
+}
+
+.positive-bonus {
+  color: #00ff00; /* Green color for positive bonus */
 }
 
 .title {
