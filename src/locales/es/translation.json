@@ -1,0 +1,49 @@
+{
+  "quizResults": {
+    "title": "Resultados del Cuestionario",
+    "show": "Mostrar",
+    "allAnswers": "Todas las Respuestas",
+    "correctAnswers": "Respuestas Correctas",
+    "incorrectAnswers": "Respuestas Incorrectas",
+    "question": "Pregunta",
+    "yourAnswer": "Tu Respuesta",
+    "correctAnswer": "Respuesta Correcta",
+    "learnMore": "Aprender Más",
+    "backToCategories": "Volver a Categorías",
+    "moreInfo": "Más información sobre esta pregunta."
+  },
+  "quiz": {
+    "title": "Cuestionario"
+  },
+  "instructions": {
+    "title": "Instrucciones",
+    "welcome": "¡Bienvenido al cuestionario!",
+    "step1": "Paso 1: Selecciona una categoría.",
+    "step2": "Paso 2: Selecciona un nivel de dificultad.",
+    "step3": "Paso 3: Comienza el cuestionario y responde las preguntas.",
+    "difficultyLevels": "Niveles de Dificultad",
+    "easy": "Fácil: Más tiempo y preguntas más simples.",
+    "medium": "Medio: Tiempo equilibrado y dificultad de preguntas.",
+    "hard": "Difícil: Menos tiempo y preguntas más difíciles.",
+    "expert": "Experto: Muy poco tiempo y preguntas muy difíciles.",
+    "backToMenu": "Volver al Menú"
+  },
+  "categories": {
+    "title": "PMI ATAQUE TIEMPO",
+    "selectCategory": "Seleccionar Categoría",
+    "selectCategoryPlaceholder": "Elige una categoría",
+    "projectManagement": "Gestión de Proyectos",
+    "integrationManagement": "Gestión de Integración",
+    "costManagement": "Gestión de Costos",
+    "timeManagement": "Gestión del Tiempo",
+    "humanResourceManagement": "Gestión de Recursos Humanos",
+    "selectDifficulty": "Seleccionar Dificultad",
+    "selectDifficultyPlaceholder": "Elige un nivel de dificultad",
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil",
+    "expert": "Experto",
+    "startQuiz": "Comenzar Cuestionario",
+    "howToPlay": "Cómo Jugar"
+  }
+}

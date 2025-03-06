@@ -1,37 +1,40 @@
 import React from 'react';
 import '../App.css';
 import { Typography, Button } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 function Instructions({ setShowInstructions }) {
+  const { t } = useTranslation();
+
   return (
     <div className='instructions-section'>
-      <Typography variant="h4" className='title'>How to Play</Typography>
+      <Typography variant="h4" className='title'>{t('instructions.title')}</Typography>
       <Typography variant="body1" className='instructions-text'>
-        Welcome to the PMI Time Attack Quiz! Here's how it works:
+        {t('instructions.welcome')}
       </Typography>
       <Typography variant="body1" className='instructions-text'>
-        1. Select a category and difficulty level to start the quiz.
+        {t('instructions.step1')}
       </Typography>
       <Typography variant="body1" className='instructions-text'>
-        2. Answer each question before the timer runs out. Correct answers will add 10 seconds to your time.
+        {t('instructions.step2')}
       </Typography>
       <Typography variant="body1" className='instructions-text'>
-        3. The quiz ends when you have answered all questions or the timer reaches zero.
+        {t('instructions.step3')}
       </Typography>
-      <Typography variant="h5" className='title'>Difficulty Levels</Typography>
+      <Typography variant="h5" className='title'>{t('instructions.difficultyLevels')}</Typography>
       <Typography variant="body1" className='instructions-text'>
-        <strong>Easy:</strong> 90 seconds to start.
-      </Typography>
-      <Typography variant="body1" className='instructions-text'>
-        <strong>Medium:</strong> 60 seconds to start.
+        <strong>{t('instructions.easy')}</strong>
       </Typography>
       <Typography variant="body1" className='instructions-text'>
-        <strong>Hard:</strong> 30 seconds to start.
+        <strong>{t('instructions.medium')}</strong>
       </Typography>
       <Typography variant="body1" className='instructions-text'>
-        <strong>Expert:</strong> 15 seconds to start.
+        <strong>{t('instructions.hard')}</strong>
       </Typography>
-      <Button variant="contained" color="primary" onClick={() => setShowInstructions(false)}>Back to Menu</Button>
+      <Typography variant="body1" className='instructions-text'>
+        <strong>{t('instructions.expert')}</strong>
+      </Typography>
+      <Button variant="contained" color="primary" onClick={() => setShowInstructions(false)}>{t('instructions.backToMenu')}</Button>
     </div>
   );
 }

@@ -1,0 +1,50 @@
+{
+  "quizResults": {
+    "title": "Quiz Results",
+    "show": "Show",
+    "allAnswers": "All Answers",
+    "correctAnswers": "Correct Answers",
+    "incorrectAnswers": "Incorrect Answers",
+    "question": "Question",
+    "yourAnswer": "Your Answer",
+    "correctAnswer": "Correct Answer",
+    "learnMore": "Learn More",
+    "backToCategories": "Back to Categories",
+    "moreInfo": "More information about this question."
+  },
+  "quiz": {
+    "title": "Quiz"
+  },
+  "instructions": {
+    "title": "Instructions",
+    "welcome": "Welcome to the quiz!",
+    "step1": "Step 1: Select a category.",
+    "step2": "Step 2: Select a difficulty level.",
+    "step3": "Step 3: Start the quiz and answer the questions.",
+    "difficultyLevels": "Difficulty Levels",
+    "easy": "Easy: More time and simpler questions.",
+    "medium": "Medium: Balanced time and question difficulty.",
+    "hard": "Hard: Less time and harder questions.",
+    "expert": "Expert: Very little time and very hard questions.",
+    "backToMenu": "Back to Menu"
+  },
+  "categories": {
+    "title": "PMI ATTACK TIME",
+    "startQuizNow": "Start Quiz Now",
+    "selectCategory": "Select Category",
+    "selectCategoryPlaceholder": "Choose a category",
+    "projectManagement": "Project Management",
+    "integrationManagement": "Integration Management",
+    "costManagement": "Cost Management",
+    "timeManagement": "Time Management",
+    "humanResourceManagement": "Human Resource Management",
+    "selectDifficulty": "Select Difficulty",
+    "selectDifficultyPlaceholder": "Choose a difficulty level",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "expert": "Expert",
+    "startQuiz": "Start Quiz",
+    "howToPlay": "How to Play"
+  }
+}

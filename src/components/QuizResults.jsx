@@ -1,9 +1,32 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { Button, FormControl, InputLabel, MenuItem, Select, Typography, List, ListItem, ListItemText } from '@mui/material';
+import { Button, FormControl, InputLabel, MenuItem, Select, Typography, Paper, Grid, Card, CardContent, CardActions, Snackbar, Slide, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useTranslation } from 'react-i18next';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#dc004e',
+    },
+  },
+  typography: {
+    h4: {
+      fontWeight: 600,
+    },
+  },
+});
 
 function QuizResults({ results, setSelectedQuiz }) {
-  const [filter, setFilter] = useState('correct');
+  const { t } = useTranslation();
+  const [filter, setFilter] = useState('all');
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   const filteredResults = results.filter(result => {
     if (filter === 'correct') return result.yourAnswer === result.correctAnswer;
@@ -11,43 +34,74 @@ function QuizResults({ results, setSelectedQuiz }) {
     return true;
   });
 
+  const handleSnackbarClose = () => {
+    setSnackbarOpen(false);
+  };
+
   return (
-    <div className='results-section'>
-      <Typography variant="h4">Quiz Results</Typography>
-      <FormControl fullWidth margin="normal" sx={{backgroundColor: 'white'}}>
-        <InputLabel id="filter-label" sx={{color: 'black'}}>Show</InputLabel>
-        <Select
-          labelId="filter-label"
-          id="filter"
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-        >
-          <MenuItem value="correct">Correct Answers</MenuItem>
-          <MenuItem value="incorrect">Incorrect Answers</MenuItem>
-        </Select>
-      </FormControl>
-      <List>
-        {filteredResults.map((result, index) => (
-          <ListItem key={index} className={result.yourAnswer === result.correctAnswer ? 'correct' : 'incorrect'}>
-            <ListItemText
-              primary={`Question: ${result.question}`}
-              secondary={
-                <>
-                  <Typography component="span" variant="body2" color="textPrimary">
-                    Your answer: {result.yourAnswer}
-                  </Typography>
-                  <br />
-                  <Typography component="span" variant="body2" color="textPrimary">
-                    Correct answer: {result.correctAnswer}
-                  </Typography>
-                </>
-              }
-            />
-          </ListItem>
-        ))}
-      </List>
-      <Button variant="contained" color="secondary" onClick={() => setSelectedQuiz(null)}>Back to Categories</Button>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Slide direction="up" in={true} mountOnEnter unmountOnExit timeout={1000}>
+        <Paper elevation={3} className='results-section' sx={{ backgroundColor: '#e0e0e0', padding: '20px' }}>
+          <Typography variant="h4" className='title'>{t('quizResults.title')}</Typography>
+          <FormControl fullWidth margin="normal" sx={{ backgroundColor: '#d0d0d0' }}>
+            <InputLabel id="filter-label" sx={{ color: '#333' }}>{t('quizResults.show')}</InputLabel>
+            <Select
+              labelId="filter-label"
+              id="filter"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            >
+              <MenuItem value="all">{t('quizResults.allAnswers')}</MenuItem>
+              <MenuItem value="correct">{t('quizResults.correctAnswers')}</MenuItem>
+              <MenuItem value="incorrect">{t('quizResults.incorrectAnswers')}</MenuItem>
+            </Select>
+          </FormControl>
+          <Grid container spacing={2}>
+            {filteredResults.map((result, index) => (
+              <Grid item xs={12} sm={6} md={4} key={index}>
+                <Card className={result.yourAnswer === result.correctAnswer ? 'correct' : 'incorrect'} sx={{ height: '100%' }}>
+                  <CardContent>
+                    <Accordion>
+                      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                        <Typography variant="h6" sx={{ color: result.yourAnswer === result.correctAnswer ? '#4caf50' : '#f44336' }}>
+                          {`${t('quizResults.question')} ${index + 1}`}
+                        </Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>
+                          {result.question}
+                        </Typography>
+                      </AccordionDetails>
+                    </Accordion>
+                    {result.yourAnswer === result.correctAnswer ? (
+                      <CheckCircleIcon sx={{ color: '#4caf50', marginLeft: '10px' }} />
+                    ) : (
+                      <CancelIcon sx={{ color: '#f44336', marginLeft: '10px' }} />
+                    )}
+                    <Typography component="span" variant="body2" color="textPrimary" sx={{ display: 'block', marginTop: '10px' }}>
+                      <strong>{t('quizResults.yourAnswer')}:</strong> {result.yourAnswer}
+                    </Typography>
+                    <Typography component="span" variant="body2" color="textPrimary" sx={{ display: 'block' }}>
+                      <strong>{t('quizResults.correctAnswer')}:</strong> {result.correctAnswer}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" onClick={() => setSnackbarOpen(true)}>{t('quizResults.learnMore')}</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+          <Button variant="contained" color="primary" onClick={() => setSelectedQuiz(null)}>{t('quizResults.backToCategories')}</Button>
+          <Snackbar
+            open={snackbarOpen}
+            autoHideDuration={6000}
+            onClose={handleSnackbarClose}
+            message={t('quizResults.moreInfo')}
+          />
+        </Paper>
+      </Slide>
+    </ThemeProvider>
   );
 }
 

@@ -4,10 +4,29 @@ import Timer from './Timer';
 import Question from './Question';
 import AnswerSection from './AnswerSection';
 import QuizStepper from './QuizStepper';
-import quizzes from '../data/quizzes.json';
-import deepseek from '../data/deepseek.json';
+import React from 'react';
+import { Button, Typography, Paper, Slide, Box, Grow } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useTranslation } from 'react-i18next';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#dc004e',
+    },
+  },
+  typography: {
+    h4: {
+      fontWeight: 600,
+    },
+  },
+});
 
 function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
+  const { t } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -18,10 +37,21 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
   const [results, setResults] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [bonusIndicator, setBonusIndicator] = useState('');
+  const [showCorrectAnimation, setShowCorrectAnimation] = useState(false);
 
   useEffect(() => {
-    setQuestions(shuffleArray(getQuestions(selectedQuiz.category)));
+    fetchQuestions(selectedQuiz.category);
   }, [selectedQuiz.category]);
+
+  const fetchQuestions = async (category) => {
+    try {
+      const response = await fetch(`http://18.220.77.57:3000/${category}`);
+      const data = await response.json();
+      setQuestions(shuffleArray(data));
+    } catch (error) {
+      console.error('Error fetching questions:', error);
+    }
+  };
 
   const steps = questions.map((_, index) => `Q${index + 1}`);
 
@@ -56,6 +86,8 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
       setScore(score + 1);
       setTimeLeft(timeLeft + 10);
       setBonusIndicator('+10');
+      setShowCorrectAnimation(true);
+      setTimeout(() => setShowCorrectAnimation(false), 1000);
     } else if (selectedQuiz.difficulty === 'hard' || selectedQuiz.difficulty === 'expert') {
       setTimeLeft(timeLeft - 5); // Decrease time on incorrect answers for hard and expert levels
       setBonusIndicator('-5');
@@ -101,22 +133,34 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
   }
 
   return (
-    <>
-      {showScore ? (
-        <div className='score-section'>
-          You scored {score} out of {questions.length}
-        </div>
-      ) : (
-        <>
-          <Timer timeLeft={timeLeft} nanoSeconds={nanoSeconds} showBonus={showBonus} pulse={pulse} bonusIndicator={bonusIndicator} />
-          <Question currentQuestionIndex={currentQuestionIndex} questions={questions} />
-          <AnswerSection questions={questions} currentQuestionIndex={currentQuestionIndex} handleAnswerOptionClick={handleAnswerOptionClick} />
-        </>
-      )}
-      <button className='back-button' onClick={() => setSelectedQuiz(null)}>Back to Categories</button>
-      <button onClick={handleQuizCompletion}>Finish Quiz</button>
-      <QuizStepper steps={steps} activeStep={currentQuestionIndex} />
-    </>
+    <ThemeProvider theme={theme}>
+      <Slide direction="up" in={true} mountOnEnter unmountOnExit timeout={1000}>
+        <Paper elevation={3} sx={{ padding: '20px', backgroundColor: '#e0e0e0' }}>
+          <Typography variant="h4" sx={{ marginBottom: '20px' }}>{t('quiz.title')}</Typography>
+          {showScore ? (
+            <div className='score-section'>
+              You scored {score} out of {questions.length}
+            </div>
+          ) : (
+            <>
+              <Timer timeLeft={timeLeft} nanoSeconds={nanoSeconds} showBonus={showBonus} pulse={pulse} bonusIndicator={bonusIndicator} />
+              <Question currentQuestionIndex={currentQuestionIndex} questions={questions} />
+              <AnswerSection questions={questions} currentQuestionIndex={currentQuestionIndex} handleAnswerOptionClick={handleAnswerOptionClick} />
+              <Grow in={showCorrectAnimation}>
+                <Typography variant="h2" sx={{ color: '#4caf50', fontWeight: 'bold', textAlign: 'center', marginTop: '20px' }}>
+                  Correct!
+                </Typography>
+              </Grow>
+            </>
+          )}
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
+            <Button variant="contained" color="secondary" onClick={() => setSelectedQuiz(null)}>Back to Categories</Button>
+            <Button variant="contained" color="primary" onClick={() => handleQuizCompletion(results)}>Finish Quiz</Button>
+          </Box>
+          <QuizStepper steps={steps} activeStep={currentQuestionIndex} />
+        </Paper>
+      </Slide>
+    </ThemeProvider>
   );
 }
 
@@ -133,14 +177,6 @@ const getInitialTime = (difficulty) => {
     default:
       return 60;
   }
-};
-
-const getQuestions = (category) => {
-  const questions = [...(quizzes[category] || []), ...(deepseek[category] || [])];
-  return questions.map(question => ({
-    ...question,
-    options: shuffleArray(question.options)
-  }));
 };
 
 const shuffleArray = (array) => {
