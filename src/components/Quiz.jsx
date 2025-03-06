@@ -45,7 +45,7 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
 
   const fetchQuestions = async (category) => {
     try {
-      const response = await fetch(`https://18.220.77.57:3000/${category}`);
+      const response = await fetch(`https://18.220.77.57:443/${category}`);
       const data = await response.json();
       setQuestions(shuffleArray(data));
     } catch (error) {
