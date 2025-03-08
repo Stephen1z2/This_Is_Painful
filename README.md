@@ -141,3 +141,4 @@ This project is a quiz application that allows users to select a category and di
 35. Added an accordion to handle longer questions and improve card formatting. [Done]
 36. Added multi-language support (English and Spanish). [Done]
 37. [Bug] When finishing a quiz early it shows a blank results page. [Resolved]
+38. Deployed backend with self signed cert and app now works with HTTPS! [YAY]

@@ -4,6 +4,7 @@ import Quiz from './components/Quiz';
 import Categories from './components/Categories';
 import QuizResults from './components/QuizResults';
 import Instructions from './components/Instructions';
+import PomodoroTimer from './components/PomodoroTimer';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Container, Slide, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import { I18nextProvider } from 'react-i18next';
@@ -113,6 +114,7 @@ function App() {
           <Slide direction="up" in={true} mountOnEnter unmountOnExit timeout={1000}>
             <div>{renderContent()}</div>
           </Slide>
+          <PomodoroTimer />
         </Container>
       </ThemeProvider>
     </I18nextProvider>
