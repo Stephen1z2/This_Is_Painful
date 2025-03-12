@@ -10,7 +10,8 @@
     "correctAnswer": "Correct Answer",
     "learnMore": "Learn More",
     "backToCategories": "Back to Categories",
-    "moreInfo": "More information about this question."
+    "moreInfo": "More information about this question.",
+    "scoreTally": "You got {{correct}} out of {{total}} questions correct."
   },
   "quiz": {
     "title": "Quiz"

@@ -38,11 +38,17 @@ function QuizResults({ results, setSelectedQuiz }) {
     setSnackbarOpen(false);
   };
 
+  const correctAnswersCount = results.filter(result => result.yourAnswer === result.correctAnswer).length;
+  const totalQuestions = results.length;
+
   return (
     <ThemeProvider theme={theme}>
       <Slide direction="up" in={true} mountOnEnter unmountOnExit timeout={1000}>
         <Paper elevation={3} className='results-section' sx={{ backgroundColor: '#e0e0e0', padding: '20px' }}>
           <Typography variant="h4" className='title'>{t('quizResults.title')}</Typography>
+          <Typography variant="h6" className='score-tally'>
+            {t('quizResults.scoreTally', { correct: correctAnswersCount, total: totalQuestions })}
+          </Typography>
           <FormControl fullWidth margin="normal" sx={{ backgroundColor: '#d0d0d0' }}>
             <InputLabel id="filter-label" sx={{ color: '#333' }}>{t('quizResults.show')}</InputLabel>
             <Select

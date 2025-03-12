@@ -1,6 +1,8 @@
 import '../App.css'
 
 function Question({ currentQuestionIndex, questions }) {
+  if (!questions.length) return null; // Add this line to handle empty questions array
+
   return (
     <div className='question-section'>
       <div className='question-count'>

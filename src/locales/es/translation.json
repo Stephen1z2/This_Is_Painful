@@ -10,7 +10,8 @@
     "correctAnswer": "Respuesta Correcta",
     "learnMore": "Aprender Más",
     "backToCategories": "Volver a Categorías",
-    "moreInfo": "Más información sobre esta pregunta."
+    "moreInfo": "Más información sobre esta pregunta.",
+    "scoreTally": "Has acertado {{correct}} de {{total}} preguntas."
   },
   "quiz": {
     "title": "Cuestionario"
