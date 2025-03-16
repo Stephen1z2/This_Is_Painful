@@ -161,6 +161,26 @@
         "Risk Register"
       ],
       "answer": "Risk Register"
+    },
+    {
+      "question": "You are assigned as the project manager for a new product launch. During the initial meeting, some senior stakeholders express concerns about an unclear project scope. What should be your first course of action to address these concerns?",
+      "options": [
+        "Proceed directly to detailed planning.",
+        "Conduct a stakeholder analysis and document their expectations.",
+        "Schedule a follow-up meeting with only the technical team.",
+        "Finalize the project charter without further input."
+      ],
+      "answer": "Conduct a stakeholder analysis and document their expectations."
+    },
+    {
+      "question": "As a newly appointed project manager, you receive a project charter that only provides a high-level overview. To develop a detailed project plan, what should be your initial step?",
+      "options": [
+        "Start detailed planning immediately without further clarification.",
+        "Organize a kick-off meeting with key stakeholders to clarify objectives.",
+        "Request an updated charter with more detailed information.",
+        "Delegate planning tasks to the team without consulting stakeholders."
+      ],
+      "answer": "Organize a kick-off meeting with key stakeholders to clarify objectives."
     }
   ],
   "integrationManagement": [
@@ -243,6 +263,56 @@
         "Risk Register"
       ],
       "answer": "Change Control System"
+    },
+    {
+      "question": "During project execution, you receive a change request that impacts multiple aspects of the project. What is the best approach to handle this change?",
+      "options": [
+        "Implement the change immediately to meet stakeholder demands.",
+        "Update the project management plan after obtaining change control board approval.",
+        "Consult with the team and revise the schedule without documentation.",
+        "Reject the change to avoid further complications."
+      ],
+      "answer": "Update the project management plan after obtaining change control board approval."
+    },
+    {
+      "question": "You are in the integration phase and receive conflicting change requests from different departments. How should you manage these requests?",
+      "options": [
+        "Approve all requests to maintain department satisfaction.",
+        "Prioritize requests based on project objectives and coordinate with the change control board.",
+        "Reject all change requests to prevent scope creep.",
+        "Allow each department to implement changes in their areas independently."
+      ],
+      "answer": "Prioritize requests based on project objectives and coordinate with the change control board."
+    },
+    {
+      "question": "During project execution, you receive a change request that could potentially delay several dependent deliverables. What is your best approach?",
+      "options": [
+        "Evaluate the impact and implement the change immediately.",
+        "Evaluate the impact and update the project management plan after approval by the change control board.",
+        "Ignore the change since it might not affect all deliverables.",
+        "Delegate the decision to a team lead."
+      ],
+      "answer": "Evaluate the impact and update the project management plan after approval by the change control board."
+    },
+    {
+      "question": "Your project involves multiple teams working on different components. Midway through the project, you notice that one team's deliverables do not align with the overall project objectives. What should you do?",
+      "options": [
+        "Rework the deliverables without involving the team.",
+        "Schedule a cross-team meeting to realign objectives and adjust the integration plan.",
+        "Ignore the misalignment and hope it resolves itself.",
+        "Reassign the team to a different project."
+      ],
+      "answer": "Schedule a cross-team meeting to realign objectives and adjust the integration plan."
+    },
+    {
+      "question": "You discover that the project’s integration plan is not being followed consistently across teams, leading to inconsistencies in deliverables. What is your best course of action?",
+      "options": [
+        "Enforce the original plan without any modifications.",
+        "Schedule regular integration review meetings and update the integration management process.",
+        "Allow each team to continue with their own processes.",
+        "Abandon the integration plan entirely."
+      ],
+      "answer": "Schedule regular integration review meetings and update the integration management process."
     }
   ],
   "costManagement": [
@@ -335,6 +405,56 @@
         "Cut the duration of all project activities to meet the new deadline."
       ],
       "answer": "Inform the customer about the impact on project constraints and, after approval, crash the project."
+    },
+    {
+      "question": "Midway through a construction project, you observe that project costs have exceeded the budget by 15% due to unexpected material price increases. What is the best course of action?",
+      "options": [
+        "Immediately increase the budget to accommodate the cost increase.",
+        "Re-baseline the project without investigating the variance.",
+        "Conduct a detailed cost variance analysis and implement corrective actions through change control.",
+        "Ignore the variance since the schedule is on track."
+      ],
+      "answer": "Conduct a detailed cost variance analysis and implement corrective actions through change control."
+    },
+    {
+      "question": "While monitoring project costs, you notice that the Cost Performance Index (CPI) has dropped to 0.85. What should you do next?",
+      "options": [
+        "Approve additional expenditures to accelerate progress.",
+        "Analyze the variance in costs and determine corrective measures.",
+        "Halt the project until the issue is resolved.",
+        "Adjust the project schedule without reviewing cost data."
+      ],
+      "answer": "Analyze the variance in costs and determine corrective measures."
+    },
+    {
+      "question": "You notice that actual costs are trending higher than planned due to unforeseen labor expenses. How should you address this issue?",
+      "options": [
+        "Immediately cut project scope to reduce expenses.",
+        "Conduct a cost variance analysis and implement corrective actions through the change control process.",
+        "Ignore the cost trend until the project is completed.",
+        "Request additional funding without analysis."
+      ],
+      "answer": "Conduct a cost variance analysis and implement corrective actions through the change control process."
+    },
+    {
+      "question": "During a quarterly review, the project’s Cost Performance Index (CPI) falls significantly below 1.0. What should be your first step?",
+      "options": [
+        "Re-estimate the remaining costs immediately.",
+        "Conduct a thorough cost performance review and adjust forecasts accordingly.",
+        "Increase spending to try to catch up on delays.",
+        "Ignore the issue and continue as planned."
+      ],
+      "answer": "Conduct a thorough cost performance review and adjust forecasts accordingly."
+    },
+    {
+      "question": "A vendor unexpectedly increases their pricing midway through the project, impacting the project budget. How should you handle this situation?",
+      "options": [
+        "Negotiate with the vendor and update the procurement plan with a change order.",
+        "Absorb the cost increase without notifying stakeholders.",
+        "Immediately cancel the vendor contract.",
+        "Ignore the pricing change and continue as planned."
+      ],
+      "answer": "Negotiate with the vendor and update the procurement plan with a change order."
     }
   ],
   "timeManagement": [
@@ -447,6 +567,56 @@
         "Waterfall"
       ],
       "answer": "Hybrid"
+    },
+    {
+      "question": "In a software development project, you discover that a key deliverable is behind schedule and affecting the critical path. You have extra resources available, but the team is already overburdened. What is the best approach to mitigate the delay?",
+      "options": [
+        "Crash the schedule by assigning additional resources after impact analysis.",
+        "Fast-track the remaining activities by overlapping project phases.",
+        "Request a deadline extension from the client.",
+        "Reduce the project scope to meet the original deadline."
+      ],
+      "answer": "Crash the schedule by assigning additional resources after impact analysis."
+    },
+    {
+      "question": "After conducting a risk analysis, you identify several potential delays that could affect the project timeline. What should you incorporate into your schedule management plan to address these risks?",
+      "options": [
+        "Additional buffer time and contingency planning.",
+        "A reduction in project scope to shorten timelines.",
+        "Reassignment of tasks to faster team members.",
+        "Immediate acceleration of all activities."
+      ],
+      "answer": "Additional buffer time and contingency planning."
+    },
+    {
+      "question": "Your project schedule indicates a potential delay due to a bottleneck in a critical activity. What should be your first action?",
+      "options": [
+        "Re-baseline the project schedule immediately.",
+        "Perform schedule compression techniques, such as crashing or fast tracking, after conducting an impact analysis.",
+        "Extend the project deadline without further investigation.",
+        "Ignore the delay as long as non-critical activities remain on track."
+      ],
+      "answer": "Perform schedule compression techniques, such as crashing or fast tracking, after conducting an impact analysis."
+    },
+    {
+      "question": "During schedule monitoring, you notice that non-critical tasks are taking longer than planned but not affecting the critical path. What is your best response?",
+      "options": [
+        "Reallocate resources from non-critical tasks to improve overall efficiency.",
+        "Re-sequence all activities to eliminate delays.",
+        "Adjust the project scope to shorten timelines.",
+        "Ignore the delays since the critical path is unaffected."
+      ],
+      "answer": "Reallocate resources from non-critical tasks to improve overall efficiency."
+    },
+    {
+      "question": "Mid-project, a key stakeholder requests an acceleration of the project delivery date. Before making changes to the schedule, what should you consider?",
+      "options": [
+        "Only the new delivery date.",
+        "Project constraints, resource availability, and quality implications.",
+        "The original schedule without modifications.",
+        "The stakeholder's opinion alone."
+      ],
+      "answer": "Project constraints, resource availability, and quality implications."
     }
   ],
   "humanResourceManagement": [
@@ -539,6 +709,56 @@
         "No, adding one more person adds more than one communication channel."
       ],
       "answer": "No, adding one more person adds more than one communication channel."
+    },
+    {
+      "question": "During a project team meeting, two key team members are in conflict over their responsibilities, leading to decreased team morale. How should you, as the project manager, address this issue?",
+      "options": [
+        "Hold separate private meetings with each team member to mediate a resolution.",
+        "Immediately reassign one of the team members to a different project.",
+        "Address the conflict in a large group meeting without individual follow-ups.",
+        "Ignore the conflict and assume it will resolve on its own."
+      ],
+      "answer": "Hold separate private meetings with each team member to mediate a resolution."
+    },
+    {
+      "question": "Your project team is culturally diverse, and communication barriers are causing misunderstandings that affect performance. What is the most effective strategy to improve communication?",
+      "options": [
+        "Enforce a strict communication protocol using a common language for all meetings.",
+        "Allow team members to communicate in their native languages.",
+        "Eliminate group meetings and rely solely on email.",
+        "Rotate team roles to minimize cultural conflicts."
+      ],
+      "answer": "Enforce a strict communication protocol using a common language for all meetings."
+    },
+    {
+      "question": "Two team members consistently disagree on project responsibilities, causing delays. What is the best way to resolve their conflict?",
+      "options": [
+        "Mediate a discussion to clarify roles and responsibilities and update the RACI matrix if needed.",
+        "Reassign one of the team members to another project.",
+        "Ignore the conflict and hope it resolves itself.",
+        "Escalate the issue immediately to upper management."
+      ],
+      "answer": "Mediate a discussion to clarify roles and responsibilities and update the RACI matrix if needed."
+    },
+    {
+      "question": "You notice that the performance of a recently onboarded team member is below expectations, impacting team productivity. What should you do?",
+      "options": [
+        "Provide additional training and mentoring along with setting clear performance expectations.",
+        "Immediately remove the team member from the project.",
+        "Ignore the issue to avoid conflict.",
+        "Transfer the team member to another team without feedback."
+      ],
+      "answer": "Provide additional training and mentoring along with setting clear performance expectations."
+    },
+    {
+      "question": "The project team is experiencing low morale due to high workload and tight deadlines. What approach should you take to improve team motivation?",
+      "options": [
+        "Increase work hours to push through deadlines.",
+        "Communicate openly about challenges, acknowledge efforts, and offer support to manage workload.",
+        "Ignore the morale issues and focus solely on project deliverables.",
+        "Reduce team meetings and let the team work independently."
+      ],
+      "answer": "Communicate openly about challenges, acknowledge efforts, and offer support to manage workload."
     }
   ]
 }

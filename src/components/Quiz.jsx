@@ -45,7 +45,7 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
 
   const fetchQuestions = async (category) => {
     try {
-      const response = await fetch(`https://3.138.119.208/${category}`);
+      const response = await fetch(`https://18.116.12.247/${category}`);
       const data = await response.json();
       setQuestions(shuffleArray(data));
     } catch (error) {
@@ -63,13 +63,26 @@ function Quiz({ selectedQuiz, setSelectedQuiz, setQuizResults }) {
       return () => clearInterval(timer);
     } else if (timeLeft === 0 && nanoSeconds === 0) {
       setShowScore(true);
+      setQuizResults(results); // Ensure results are set when the quiz ends
     }
   }, [timeLeft, nanoSeconds, showScore]);
 
   const updateNanoSeconds = () => {
     setNanoSeconds((prevNanoSeconds) => {
       if (prevNanoSeconds === 0) {
-        setTimeLeft(timeLeft - 1);
+        if (timeLeft === 0) {
+          setShowScore(true); // End the quiz when timeLeft is zero
+          setQuizResults(results); // Ensure results are set when the quiz ends
+          return 0; // Prevent going into negative time
+        }
+        setTimeLeft((prevTimeLeft) => {
+          if (prevTimeLeft === 0) {
+            setShowScore(true); // End the quiz when timeLeft is zero
+            setQuizResults(results); // Ensure results are set when the quiz ends
+            return 0;
+          }
+          return prevTimeLeft - 1;
+        });
         setPulse(true);
         setTimeout(() => setPulse(false), 500);
         return 99;

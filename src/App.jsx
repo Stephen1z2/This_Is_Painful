@@ -8,7 +8,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Container, Slide, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
-import { initReactI18next } from 'react-i18next';
 
 const theme = createTheme({
   palette: {
@@ -41,25 +40,14 @@ function App() {
       const enTranslation = await import('./locales/en/translation.json');
       const esTranslation = await import('./locales/es/translation.json');
 
-      i18n
-        .use(initReactI18next)
-        .init({
-          resources: {
-            en: {
-              translation: enTranslation.default
-            },
-            es: {
-              translation: esTranslation.default
-            }
-          },
-          fallbackLng: 'en',
-          interpolation: {
-            escapeValue: false
-          }
-        })
-        .then(() => {
-          setPageBlank(false); // Set pageBlank to false after i18n initialization
-        });
+      i18n.init({
+        resources: {
+          en: { translation: enTranslation.default },
+          es: { translation: esTranslation.default }
+        },
+        fallbackLng: 'en',
+        interpolation: { escapeValue: false }
+      }).then(() => setPageBlank(false));
     };
 
     loadTranslations();
@@ -67,7 +55,7 @@ function App() {
 
   const handleSetSelectedQuiz = (quiz) => {
     setSelectedQuiz(quiz);
-    setQuizResults(null); // Reset quiz results when selecting a new quiz
+    setQuizResults(null);
   };
 
   const handleLanguageChange = (event) => {
@@ -77,19 +65,16 @@ function App() {
   };
 
   const renderContent = () => {
-    if (pageBlank) {
-      return null; // Return nothing if the page is blank
-    } else if (showInstructions) {
-      return <Instructions setShowInstructions={setShowInstructions} />;
-    } else if (selectedQuiz) {
+    if (pageBlank) return null;
+    if (showInstructions) return <Instructions setShowInstructions={setShowInstructions} />;
+    if (selectedQuiz) {
       return quizResults ? (
         <QuizResults results={quizResults} setSelectedQuiz={handleSetSelectedQuiz} />
       ) : (
         <Quiz selectedQuiz={selectedQuiz} setSelectedQuiz={handleSetSelectedQuiz} setQuizResults={setQuizResults} />
       );
-    } else {
-      return <Categories setSelectedQuiz={handleSetSelectedQuiz} setShowInstructions={setShowInstructions} />;
     }
+    return <Categories setSelectedQuiz={handleSetSelectedQuiz} setShowInstructions={setShowInstructions} />;
   };
 
   return (

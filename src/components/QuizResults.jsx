@@ -98,7 +98,9 @@ function QuizResults({ results, setSelectedQuiz }) {
               </Grid>
             ))}
           </Grid>
-          <Button variant="contained" color="primary" onClick={() => setSelectedQuiz(null)}>{t('quizResults.backToCategories')}</Button>
+          <Button variant="contained" color="primary" onClick={() => setSelectedQuiz(null)} sx={{ marginTop: '20px' }}>
+            {t('quizResults.backToCategories')}
+          </Button>
           <Snackbar
             open={snackbarOpen}
             autoHideDuration={6000}
